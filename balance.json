@@ -1,0 +1,2545 @@
+{
+
+  "schema": "bizarre-arena-balance-v1",
+
+  "version": "2026-11-09 build values",
+
+  "global": {
+
+    "ultimateCooldown": 120.0,
+
+    "ultimateKillRefund": 45.0
+
+  },
+
+  "skills": [
+
+    {
+
+      "profile": 0,
+
+      "character": "Jotaro Kujo / Star Platinum",
+
+      "skill": "Ora Rush",
+
+      "tag": "Skill.JTR.OraRush",
+
+      "damage": 34.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 1,
+
+      "character": "Jotaro Kujo / Star Platinum",
+
+      "skill": "Blocking Rush",
+
+      "tag": "Skill.JTR.BlockingRushSTP",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 2,
+
+      "character": "Jotaro Kujo / Star Platinum",
+
+      "skill": "The World",
+
+      "tag": "Skill.JTR.TheWorldSTP",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 2.0,
+
+      "statusDuration": 2.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 3,
+
+      "character": "DIO / The World",
+
+      "skill": "Muda Rush",
+
+      "tag": "Skill.DIO.MudaRush",
+
+      "damage": 32.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 6.5,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 4,
+
+      "character": "DIO / The World",
+
+      "skill": "Glimpse of Force",
+
+      "tag": "Skill.DIO.GlimpseOfForce",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 800.0,
+
+      "range": 18.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 5,
+
+      "character": "DIO / The World",
+
+      "skill": "The World",
+
+      "tag": "Skill.DIO.TheWorldWLD",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 3.0,
+
+      "statusDuration": 3.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 6,
+
+      "character": "Noriaki Kakyoin / Hierophant Green",
+
+      "skill": "Emerald Splash",
+
+      "tag": "Skill.KKI.EmeraldSplash",
+
+      "damage": 12.5,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.125,
+
+      "cost": 30.0,
+
+      "range": 100.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 7,
+
+      "character": "Noriaki Kakyoin / Hierophant Green",
+
+      "skill": "Separate",
+
+      "tag": "Skill.KKI.Separate",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 60.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 8,
+
+      "character": "Noriaki Kakyoin / Hierophant Green",
+
+      "skill": "20 m Emerald Splash",
+
+      "tag": "Skill.KKI.Radius20mEmeraldSplash",
+
+      "damage": 5.5,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 4.0,
+
+      "statusDuration": 4.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 20.0
+
+    },
+
+    {
+
+      "profile": 9,
+
+      "character": "Bruno Bucciarati / Sticky Fingers",
+
+      "skill": "Zip Rush",
+
+      "tag": "Skill.BCT.ZipRush",
+
+      "damage": 27.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 14.5,
+
+      "radius": 0.6
+
+    },
+
+    {
+
+      "profile": 10,
+
+      "character": "Bruno Bucciarati / Sticky Fingers",
+
+      "skill": "Zipper",
+
+      "tag": "Skill.BCT.Zipper",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 100.0,
+
+      "range": 5.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 11,
+
+      "character": "Bruno Bucciarati / Sticky Fingers",
+
+      "skill": "Sticky Dive",
+
+      "tag": "Skill.BCT.StickyDive",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 6.0,
+
+      "statusDuration": 6.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 12,
+
+      "character": "Guido Mista / Sex Pistols",
+
+      "skill": "Snipe",
+
+      "tag": "Skill.MST.Snipe",
+
+      "damage": 20.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 160.0,
+
+      "range": 150.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 13,
+
+      "character": "Guido Mista / Sex Pistols",
+
+      "skill": "Rodeo Shot",
+
+      "tag": "Skill.MST.RodeoShot",
+
+      "damage": 30.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 13.0,
+
+      "statusDuration": 13.0,
+
+      "cooldown": 0.8,
+
+      "cost": 500.0,
+
+      "range": 130.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 14,
+
+      "character": "Guido Mista / Sex Pistols",
+
+      "skill": "Pistols Strike",
+
+      "tag": "Skill.MST.PistolsStrike",
+
+      "damage": 3.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 10.0,
+
+      "statusDuration": 10.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 100.0,
+
+      "radius": 3.0
+
+    },
+
+    {
+
+      "profile": 15,
+
+      "character": "Koichi Hirose / Echoes",
+
+      "skill": "Tail Rush",
+
+      "tag": "Skill.KOI.TailRush",
+
+      "damage": 22.5,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 14.0,
+
+      "radius": 0.5
+
+    },
+
+    {
+
+      "profile": 16,
+
+      "character": "Koichi Hirose / Echoes",
+
+      "skill": "Echo Stamp",
+
+      "tag": "Skill.KOI.EchoStamp",
+
+      "damage": 12.5,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 5.0,
+
+      "statusDuration": 5.0,
+
+      "cooldown": 0.8,
+
+      "cost": 100.0,
+
+      "range": 60.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 17,
+
+      "character": "Koichi Hirose / Echoes",
+
+      "skill": "Three Freeze",
+
+      "tag": "Skill.KOI.ThreeFreeze",
+
+      "damage": 10.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 10.0,
+
+      "statusDuration": 10.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 14.0,
+
+      "radius": 0.6
+
+    },
+
+    {
+
+      "profile": 18,
+
+      "character": "Rohan Kishibe / Heaven's Door",
+
+      "skill": "Rush",
+
+      "tag": "Skill.RHN.Rush",
+
+      "damage": 24.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 100.0,
+
+      "range": 7.5,
+
+      "radius": 0.5
+
+    },
+
+    {
+
+      "profile": 19,
+
+      "character": "Rohan Kishibe / Heaven's Door",
+
+      "skill": "Pink Dark",
+
+      "tag": "Skill.RHN.PinkDark",
+
+      "damage": 10.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 300.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 100.0,
+
+      "range": 4.5,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 20,
+
+      "character": "Rohan Kishibe / Heaven's Door",
+
+      "skill": "Heaven's Lock",
+
+      "tag": "Skill.RHN.HeavensLock",
+
+      "damage": 10.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 10.0,
+
+      "statusDuration": 10.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 7.5,
+
+      "radius": 0.6
+
+    },
+
+    {
+
+      "profile": 21,
+
+      "character": "Josuke Higashikata / Crazy Diamond",
+
+      "skill": "Dora Rush",
+
+      "tag": "Skill.JSK.DoraRush",
+
+      "damage": 40.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 22,
+
+      "character": "Josuke Higashikata / Crazy Diamond",
+
+      "skill": "Instant Wall",
+
+      "tag": "Skill.JSK.InstantWall",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 5.0,
+
+      "statusDuration": 5.0,
+
+      "cooldown": 0.8,
+
+      "cost": 20.0,
+
+      "range": 5.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 23,
+
+      "character": "Josuke Higashikata / Crazy Diamond",
+
+      "skill": "Rage",
+
+      "tag": "Skill.JSK.Rage",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 6.0,
+
+      "statusDuration": 6.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 24,
+
+      "character": "Jean Pierre Polnareff / Silver Chariot",
+
+      "skill": "Piercing Rush",
+
+      "tag": "Skill.PLN.PiercingRush",
+
+      "damage": 25.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 110.0,
+
+      "range": 10.0,
+
+      "radius": 0.6
+
+    },
+
+    {
+
+      "profile": 25,
+
+      "character": "Jean Pierre Polnareff / Silver Chariot",
+
+      "skill": "Sword Blocking",
+
+      "tag": "Skill.PLN.SwordBlocking",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 26,
+
+      "character": "Jean Pierre Polnareff / Silver Chariot",
+
+      "skill": "Needle Shot",
+
+      "tag": "Skill.PLN.NeedleShot",
+
+      "damage": 15.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 1000.0,
+
+      "radius": 2.0
+
+    },
+
+    {
+
+      "profile": 27,
+
+      "character": "Giorno Giovanna / Gold Experience",
+
+      "skill": "Muda Rush",
+
+      "tag": "Skill.GRN.MudaRush",
+
+      "damage": 30.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 110.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 28,
+
+      "character": "Giorno Giovanna / Gold Experience",
+
+      "skill": "Over Grow",
+
+      "tag": "Skill.GRN.OverGrow",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 3.0,
+
+      "statusDuration": 3.0,
+
+      "cooldown": 0.8,
+
+      "cost": 120.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 29,
+
+      "character": "Giorno Giovanna / Gold Experience",
+
+      "skill": "Gold Experience Requiem",
+
+      "tag": "Skill.GRN.GEXRequiem",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 5.5,
+
+      "statusDuration": 5.5,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 30,
+
+      "character": "Hol Horse / Emperor",
+
+      "skill": "Snipe",
+
+      "tag": "Skill.HHS.Snipe",
+
+      "damage": 16.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 110.0,
+
+      "range": 150.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 31,
+
+      "character": "Hol Horse / Emperor",
+
+      "skill": "Snake Shot",
+
+      "tag": "Skill.HHS.SnakeShot",
+
+      "damage": 11.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 350.0,
+
+      "range": 100.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 32,
+
+      "character": "Hol Horse / Emperor",
+
+      "skill": "Emperor Typhoon",
+
+      "tag": "Skill.HHS.EmperorTyphoon",
+
+      "damage": 14.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 2.15,
+
+      "statusDuration": 2.15,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 100.0,
+
+      "radius": 0.8,
+
+      "hits": 25
+
+    },
+
+    {
+
+      "profile": 33,
+
+      "character": "Yoshikage Kira / Killer Queen",
+
+      "skill": "Killer Rush",
+
+      "tag": "Skill.KIR.KillerRush",
+
+      "damage": 30.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 7.5,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 34,
+
+      "character": "Yoshikage Kira / Killer Queen",
+
+      "skill": "First Bomb",
+
+      "tag": "Skill.KIR.FirstBomb",
+
+      "damage": 60.0,
+
+      "areaDamage": 60.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 300.0,
+
+      "statusDuration": 2.0,
+
+      "cooldown": 0.8,
+
+      "cost": 200.0,
+
+      "range": 5.2,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 35,
+
+      "character": "Yoshikage Kira / Killer Queen",
+
+      "skill": "Sheer Heart Attack",
+
+      "tag": "Skill.KIR.SheerHeartAttack",
+
+      "damage": 10.0,
+
+      "areaDamage": 60.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 10.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 1000.0,
+
+      "radius": 6.0
+
+    },
+
+    {
+
+      "profile": 36,
+
+      "character": "Narancia Ghirga / Aerosmith",
+
+      "skill": "Bora Rush",
+
+      "tag": "Skill.NRC.BoraRush",
+
+      "damage": 5.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.094,
+
+      "cost": 30.0,
+
+      "range": 100.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 37,
+
+      "character": "Narancia Ghirga / Aerosmith",
+
+      "skill": "CO2 Scan",
+
+      "tag": "Skill.NRC.CO2Scan",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 3.0,
+
+      "statusDuration": 3.0,
+
+      "cooldown": 0.8,
+
+      "cost": 200.0,
+
+      "range": 30.0,
+
+      "radius": 30.0
+
+    },
+
+    {
+
+      "profile": 38,
+
+      "character": "Narancia Ghirga / Aerosmith",
+
+      "skill": "Volare Bomb",
+
+      "tag": "Skill.NRC.VolareBomb",
+
+      "damage": 10.0,
+
+      "areaDamage": 40.0,
+
+      "dotDamage": 4.5,
+
+      "duration": 0.6,
+
+      "statusDuration": 0.6,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 1000.0,
+
+      "radius": 6.0
+
+    },
+
+    {
+
+      "profile": 39,
+
+      "character": "DIO (High) / The World",
+
+      "skill": "WRY Rush",
+
+      "tag": "Skill.DOH.WRYRush",
+
+      "damage": 38.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 130.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 40,
+
+      "character": "DIO (High) / The World",
+
+      "skill": "Glimpse of Force",
+
+      "tag": "Skill.DOH.GlimpseOfForce",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 450.0,
+
+      "range": 18.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 41,
+
+      "character": "DIO (High) / The World",
+
+      "skill": "Road Roller",
+
+      "tag": "Skill.DOH.RoadRoller",
+
+      "damage": 102.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 2.5,
+
+      "statusDuration": 2.5,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 15.0
+
+    },
+
+    {
+
+      "profile": 42,
+
+      "character": "Okuyasu Nijimura / The Hand",
+
+      "skill": "Rush",
+
+      "tag": "Skill.OKY.Rush",
+
+      "damage": 28.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 105.0,
+
+      "range": 5.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 43,
+
+      "character": "Okuyasu Nijimura / The Hand",
+
+      "skill": "Space Shaving",
+
+      "tag": "Skill.OKY.SpaceShaving",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 0.4,
+
+      "statusDuration": 0.4,
+
+      "cooldown": 0.8,
+
+      "cost": 380.0,
+
+      "range": 11.3,
+
+      "radius": 0.25
+
+    },
+
+    {
+
+      "profile": 44,
+
+      "character": "Okuyasu Nijimura / The Hand",
+
+      "skill": "Bring It On",
+
+      "tag": "Skill.OKY.BringItOn",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 6.0,
+
+      "statusDuration": 6.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 45,
+
+      "character": "Risotto Nero / Metallica",
+
+      "skill": "Blade Generation",
+
+      "tag": "Skill.RST.BladeGeneration",
+
+      "damage": 20.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 65.0,
+
+      "range": 75.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 46,
+
+      "character": "Risotto Nero / Metallica",
+
+      "skill": "Ironsand Camouflage",
+
+      "tag": "Skill.RST.IronsandCamouflage",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 20.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 47,
+
+      "character": "Risotto Nero / Metallica",
+
+      "skill": "Invasion of Metallica",
+
+      "tag": "Skill.RST.InvasionOfMetallica",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 13.0,
+
+      "duration": 7.0,
+
+      "statusDuration": 7.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.2
+
+    },
+
+    {
+
+      "profile": 48,
+
+      "character": "Diavolo / King Crimson",
+
+      "skill": "Rush",
+
+      "tag": "Skill.DVL.Rush",
+
+      "damage": 35.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 49,
+
+      "character": "Diavolo / King Crimson",
+
+      "skill": "Vanishing of Time",
+
+      "tag": "Skill.DVL.VanishingOfTime",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 50,
+
+      "character": "Diavolo / King Crimson",
+
+      "skill": "Crimson Dimension",
+
+      "tag": "Skill.DVL.CrimsonDimension",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 6.5,
+
+      "statusDuration": 6.5,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 50.0
+
+    },
+
+    {
+
+      "profile": 51,
+
+      "character": "Jolyne Cujoh / Stone Free",
+
+      "skill": "Stone Ora Rush",
+
+      "tag": "Skill.JLN.StoneOraRush",
+
+      "damage": 24.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 105.0,
+
+      "range": 13.5,
+
+      "radius": 0.6
+
+    },
+
+    {
+
+      "profile": 52,
+
+      "character": "Jolyne Cujoh / Stone Free",
+
+      "skill": "Stone Hook",
+
+      "tag": "Skill.JLN.StoneHook",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 600.0,
+
+      "range": 15.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 53,
+
+      "character": "Jolyne Cujoh / Stone Free",
+
+      "skill": "String Jail",
+
+      "tag": "Skill.JLN.StringJail",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 2.0,
+
+      "statusDuration": 2.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 13.45,
+
+      "radius": 0.65
+
+    },
+
+    {
+
+      "profile": 54,
+
+      "character": "Weather Report / Weather Report",
+
+      "skill": "Weather Rush",
+
+      "tag": "Skill.WET.WeatherRush",
+
+      "damage": 28.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 130.0,
+
+      "range": 7.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 55,
+
+      "character": "Weather Report / Weather Report",
+
+      "skill": "Heavy Rain",
+
+      "tag": "Skill.WET.HeavyRain",
+
+      "damage": 7.5,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 5.0,
+
+      "statusDuration": 5.0,
+
+      "cooldown": 0.8,
+
+      "cost": 560.0,
+
+      "range": 40.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 56,
+
+      "character": "Weather Report / Weather Report",
+
+      "skill": "Poison Dart Frog",
+
+      "tag": "Skill.WET.PoisonDartFrog",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 2.7,
+
+      "duration": 21.5,
+
+      "statusDuration": 15.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 35.0,
+
+      "radius": 15.0
+
+    },
+
+    {
+
+      "profile": 57,
+
+      "character": "Jotaro (Stone Ocean) / Star Platinum (SO)",
+
+      "skill": "Ora Rush",
+
+      "tag": "Skill.JR6.OraRush",
+
+      "damage": 30.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 7.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 58,
+
+      "character": "Jotaro (Stone Ocean) / Star Platinum (SO)",
+
+      "skill": "Blocking Rush",
+
+      "tag": "Skill.JR6.BlockingRushSP6",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 59,
+
+      "character": "Jotaro (Stone Ocean) / Star Platinum (SO)",
+
+      "skill": "The World",
+
+      "tag": "Skill.JR6.TheWorldSP6",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 2.25,
+
+      "statusDuration": 2.25,
+
+      "cooldown": 1.0,
+
+      "cost": 450.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 60,
+
+      "character": "Narciso Anasui / Diver Down",
+
+      "skill": "Diver Rush",
+
+      "tag": "Skill.ANS.DiverRush",
+
+      "damage": 28.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 7.5,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 61,
+
+      "character": "Narciso Anasui / Diver Down",
+
+      "skill": "Diver Shoot",
+
+      "tag": "Skill.ANS.DiverShoot",
+
+      "damage": 33.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 560.0,
+
+      "range": 9.0,
+
+      "radius": 1.2
+
+    },
+
+    {
+
+      "profile": 62,
+
+      "character": "Narciso Anasui / Diver Down",
+
+      "skill": "Assault Dive",
+
+      "tag": "Skill.ANS.AssaultDive",
+
+      "damage": 3.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 10.0,
+
+      "statusDuration": 10.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 2.0
+
+    },
+
+    {
+
+      "profile": 63,
+
+      "character": "Pannacotta Fugo / Purple Haze",
+
+      "skill": "Purple Rush",
+
+      "tag": "Skill.FGO.PurpleRush",
+
+      "damage": 30.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 2.5,
+
+      "duration": 0.5,
+
+      "statusDuration": 3.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 7.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 64,
+
+      "character": "Pannacotta Fugo / Purple Haze",
+
+      "skill": "Killer Haze",
+
+      "tag": "Skill.FGO.KillerHaze",
+
+      "damage": 5.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 2.5,
+
+      "duration": 3.0,
+
+      "statusDuration": 3.0,
+
+      "cooldown": 0.8,
+
+      "cost": 300.0,
+
+      "range": 1000.0,
+
+      "radius": 2.0
+
+    },
+
+    {
+
+      "profile": 65,
+
+      "character": "Pannacotta Fugo / Purple Haze",
+
+      "skill": "Ferocious Temperament",
+
+      "tag": "Skill.FGO.FerociousTemperament",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 8.0,
+
+      "statusDuration": 8.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 66,
+
+      "character": "Muhammad Avdol / Magician's Red",
+
+      "skill": "Cross Fire Hurricane",
+
+      "tag": "Skill.ABD.CrossFireHurricane",
+
+      "damage": 10.0,
+
+      "areaDamage": 15.0,
+
+      "dotDamage": 4.5,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.35,
+
+      "cost": 250.0,
+
+      "range": 100.0,
+
+      "radius": 3.0
+
+    },
+
+    {
+
+      "profile": 67,
+
+      "character": "Muhammad Avdol / Magician's Red",
+
+      "skill": "Red Bind",
+
+      "tag": "Skill.ABD.RedBind",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 0.8,
+
+      "statusDuration": 0.8,
+
+      "cooldown": 0.8,
+
+      "cost": 400.0,
+
+      "range": 8.5,
+
+      "radius": 0.25
+
+    },
+
+    {
+
+      "profile": 68,
+
+      "character": "Muhammad Avdol / Magician's Red",
+
+      "skill": "Cross Fire Hurricane Special",
+
+      "tag": "Skill.ABD.CrossFireHurricaneSpecial",
+
+      "damage": 15.0,
+
+      "areaDamage": 15.0,
+
+      "dotDamage": 4.5,
+
+      "duration": 3.0,
+
+      "statusDuration": 3.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 100.0,
+
+      "radius": 3.0,
+
+      "hits": 30
+
+    },
+
+    {
+
+      "profile": 69,
+
+      "character": "Kosaku Kawajiri / Killer Queen / Stray Cat",
+
+      "skill": "Killer Rush",
+
+      "tag": "Skill.KWK.KillerRush",
+
+      "damage": 33.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 6.5,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 70,
+
+      "character": "Kosaku Kawajiri / Killer Queen / Stray Cat",
+
+      "skill": "Air Bomb",
+
+      "tag": "Skill.KWK.AirBomb",
+
+      "damage": 0.0,
+
+      "areaDamage": 30.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 0.5,
+
+      "statusDuration": 0.5,
+
+      "cooldown": 0.8,
+
+      "cost": 950.0,
+
+      "range": 100.0,
+
+      "radius": 4.0
+
+    },
+
+    {
+
+      "profile": 71,
+
+      "character": "Kosaku Kawajiri / Killer Queen / Stray Cat",
+
+      "skill": "Bites the Dust",
+
+      "tag": "Skill.KWK.BitesTheDust",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 72,
+
+      "character": "Leone Abbacchio / Moody Blues",
+
+      "skill": "Moody Rush",
+
+      "tag": "Skill.ABC.MoodyRush",
+
+      "damage": 25.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 7.5,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 73,
+
+      "character": "Leone Abbacchio / Moody Blues",
+
+      "skill": "Dubbing",
+
+      "tag": "Skill.ABC.Dubbing",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 30.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 100.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 74,
+
+      "character": "Leone Abbacchio / Moody Blues",
+
+      "skill": "Gang Readiness",
+
+      "tag": "Skill.ABC.GangReadiness",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 6.0,
+
+      "statusDuration": 6.0,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 75,
+
+      "character": "Joseph Joestar / Hamon",
+
+      "skill": "Cracker Boomerang",
+
+      "tag": "Skill.JSP.CrackerBoomerang",
+
+      "damage": 25.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 10.75,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 76,
+
+      "character": "Joseph Joestar / Hamon",
+
+      "skill": "Hamon Hair Attack",
+
+      "tag": "Skill.JSP.HamonHairAttack",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 2.0,
+
+      "duration": 20.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 100.0,
+
+      "range": 3.0,
+
+      "radius": 1.2
+
+    },
+
+    {
+
+      "profile": 77,
+
+      "character": "Joseph Joestar / Hamon",
+
+      "skill": "Overdrive",
+
+      "tag": "Skill.JSP.Overdrive",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 7.5,
+
+      "statusDuration": 7.5,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 6.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 78,
+
+      "character": "Caesar Zeppeli / Hamon",
+
+      "skill": "Bubble Launcher",
+
+      "tag": "Skill.CSR.BubbleLauncher",
+
+      "damage": 0.0,
+
+      "areaDamage": 8.4,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.1,
+
+      "cost": 25.0,
+
+      "range": 50.0,
+
+      "radius": 2.25
+
+    },
+
+    {
+
+      "profile": 79,
+
+      "character": "Caesar Zeppeli / Hamon",
+
+      "skill": "Bubble Cutter",
+
+      "tag": "Skill.CSR.BubbleCutter",
+
+      "damage": 10.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.8,
+
+      "cost": 333.0,
+
+      "range": 100.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 80,
+
+      "character": "Caesar Zeppeli / Hamon",
+
+      "skill": "Bubble Lens",
+
+      "tag": "Skill.CSR.BubbleLens",
+
+      "damage": 7.5,
+
+      "areaDamage": 8.4,
+
+      "dotDamage": 0.0,
+
+      "duration": 3.75,
+
+      "statusDuration": 3.75,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 75.0,
+
+      "radius": 3.0,
+
+      "hits": 75
+
+    },
+
+    {
+
+      "profile": 81,
+
+      "character": "Enrico Pucci / Whitesnake",
+
+      "skill": "Rush",
+
+      "tag": "Skill.C28.Rush",
+
+      "damage": 28.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 1.0,
+
+      "statusDuration": 1.0,
+
+      "cooldown": 0.5,
+
+      "cost": 120.0,
+
+      "range": 7.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 82,
+
+      "character": "Enrico Pucci / Whitesnake",
+
+      "skill": "Rob SD",
+
+      "tag": "Skill.C28.RobSd",
+
+      "damage": 10.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 10.0,
+
+      "statusDuration": 10.0,
+
+      "cooldown": 0.8,
+
+      "cost": 240.0,
+
+      "range": 7.0,
+
+      "radius": 0.8
+
+    },
+
+    {
+
+      "profile": 83,
+
+      "character": "Enrico Pucci / Whitesnake",
+
+      "skill": "Rob MD",
+
+      "tag": "Skill.C28.RobMd",
+
+      "damage": 0.0,
+
+      "areaDamage": 0.0,
+
+      "dotDamage": 0.0,
+
+      "duration": 0.4,
+
+      "statusDuration": 0.4,
+
+      "cooldown": 1.0,
+
+      "cost": 0.0,
+
+      "range": 8.7,
+
+      "radius": 0.35
+
+    }
+
+  ]
+
+}
