@@ -4,7 +4,7 @@
 | Slot | Skill | Tag | What it does |
 |---|---|---|---|
 | Attack (LMB / right trigger) | Blade Generation | `Skill.RST.BladeGeneration` | Throws a blade. Damage falls at long range. Hold to keep throwing. |
-| Skill (Q / left trigger) | Ironsand Camouflage | `Skill.RST.IronsandCamouflage` | Fade into the scenery: enemies see the background through you. Direct attacks miss you. Drains energy. |
+| Skill (Q / left trigger) | Ironsand Camouflage | `Skill.RST.IronsandCamouflage` | Blend into the scenery. Direct attacks miss you. Drains energy. |
 | Ultimate (E / left grip) | Invasion of Metallica | `Skill.RST.InvasionOfMetallica` | Hold to aim, release. Poisons and slows the first enemy in reach. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).

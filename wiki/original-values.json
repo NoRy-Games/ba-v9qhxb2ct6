@@ -46,12 +46,13 @@
       "damage": 0.0,
       "areaDamage": 0.0,
       "dotDamage": 0.0,
-      "duration": 4.0,
-      "statusDuration": 4.0,
+      "duration": 1.5,
+      "statusDuration": 1.5,
       "cooldown": 1,
       "cost": 0,
       "range": 6.0,
-      "radius": 0.8
+      "radius": 0.8,
+      "note": "starting value; the original game can extend it during a match"
     },
     {
       "profile": 3,
@@ -91,12 +92,13 @@
       "damage": 0.0,
       "areaDamage": 0.0,
       "dotDamage": 0.0,
-      "duration": 4.0,
-      "statusDuration": 4.0,
+      "duration": 1.5,
+      "statusDuration": 1.5,
       "cooldown": 1,
       "cost": 0,
       "range": 6.0,
-      "radius": 0.8
+      "radius": 0.8,
+      "note": "starting value; the original game can extend it during a match"
     },
     {
       "profile": 6,
@@ -902,12 +904,13 @@
       "damage": 0.0,
       "areaDamage": 0.0,
       "dotDamage": 0.0,
-      "duration": 4.5,
-      "statusDuration": 4.5,
+      "duration": 1.75,
+      "statusDuration": 1.75,
       "cooldown": 1,
       "cost": 450.0,
       "range": 6.0,
-      "radius": 0.8
+      "radius": 0.8,
+      "note": "starting value; the original game can extend it during a match"
     },
     {
       "profile": 60,
