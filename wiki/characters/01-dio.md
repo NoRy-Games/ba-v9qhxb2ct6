@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | The World | `Skill.DIO.TheWorldWLD` | Stops time. Everyone else freezes while you move. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Vampire Healing (G / chest + grip): Regenerate health over time. +3 health every 2 s, 20 s, up to 75%, 40 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

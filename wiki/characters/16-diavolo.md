@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Crimson Dimension | `Skill.DVL.CrimsonDimension` | You cannot be hit. Everyone else in range moves at half speed. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Epitaph (G / chest + grip): Mark nearby enemies, even through walls. 30 m, 8 s, 30 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

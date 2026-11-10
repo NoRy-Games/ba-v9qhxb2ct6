@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Gang Readiness | `Skill.ABC.GangReadiness` | Most attacks cannot finish you: your health stops at a low floor. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Replay (G / chest + grip): Mark nearby enemies, even through walls. 20 m, 5 s, 25 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

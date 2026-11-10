@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Rob MD | `Skill.C28.RobMd` | Hold to aim, release. Takes half their health and seals their ultimate. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Collect Disc (G / chest + grip): Take a disc from a defeated enemy beside you: more damage, up to three. +7% damage a disc, 2.5 m, 5 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

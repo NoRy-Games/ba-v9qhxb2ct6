@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Assault Dive | `Skill.ANS.AssaultDive` | Your Stand crosses the floor to your aim and shreds enemies around it. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Wall Climb (G / chest + grip): Climb the wall in front of you and over the top. up to 4 s, 6 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

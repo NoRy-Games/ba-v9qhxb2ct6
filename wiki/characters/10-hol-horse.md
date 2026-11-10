@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Emperor Typhoon | `Skill.HHS.EmperorTyphoon` | Fires three spread bullets nonstop. Bullets pass through enemies. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Run Away (G / chest + grip): Run much faster for a few seconds. 1.65x speed, 4 s, 15 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

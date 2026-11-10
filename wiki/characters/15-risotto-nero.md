@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Invasion of Metallica | `Skill.RST.InvasionOfMetallica` | Hold to aim, release. Poisons and slows the first enemy in reach. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Magnetic Suture (G / chest + grip): Regenerate health over time. +3 health every 1.75 s, 20 s, up to 70%, 40 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

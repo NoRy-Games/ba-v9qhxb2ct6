@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Sheer Heart Attack | `Skill.KIR.SheerHeartAttack` | Hold to aim, release to throw. It chases the nearest enemy and explodes. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Killer Instinct (G / chest + grip): Mark enemies at 25% health or less, even through walls. 40 m, 8 s, 25 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

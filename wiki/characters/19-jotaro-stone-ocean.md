@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | The World | `Skill.JR6.TheWorldSP6` | Stops time. Everyone else freezes while you move. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Observation Eye (G / chest + grip): Mark nearby enemies, even through walls. 35 m, 5 s, 25 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Poison Dart Frog | `Skill.WET.PoisonDartFrog` | Hold to aim at the ground, release. Frogs rain and leave poison patches. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Cloud Barrier (G / chest + grip): A cloud absorbs the next damage you take. 20 damage shield, 15 s, 30 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

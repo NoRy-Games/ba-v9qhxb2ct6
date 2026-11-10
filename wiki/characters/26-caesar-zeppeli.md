@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Bubble Lens | `Skill.CSR.BubbleLens` | Fires a steady laser beam. Keep aiming to steer it. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Soul Bubble (G / chest + grip): Leave a bubble ahead. An enemy who touches it takes damage. 15 damage, lasts 20 s, 20 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

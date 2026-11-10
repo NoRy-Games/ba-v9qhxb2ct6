@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Heaven's Lock | `Skill.RHN.HeavensLock` | A hit stuns the target and seals all their skills. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Memory Leak (G / chest + grip): Read an enemy you face to restore energy. Four reads a life. 5 m, +15% energy, then 15, 10, 10, 20 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -1,7 +1,7 @@
 {
   "schema": "bizarre-arena-balance-v1",
-  "version": "v35",
-  "changelog": "changelog/v35.md",
+  "version": "v36",
+  "changelog": "changelog/v36.md",
   "global": {
     "ultimateCooldown": 120.0,
     "ultimateKillRefund": 45.0

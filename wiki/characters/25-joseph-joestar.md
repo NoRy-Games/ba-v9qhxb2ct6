@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Overdrive | `Skill.JSP.Overdrive` | Boosts your damage and speed, and you take only 70% damage. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Run Away (G / chest + grip): Run faster for a few seconds. 1.5x speed, 4 s, 15 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

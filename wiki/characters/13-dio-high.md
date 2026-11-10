@@ -8,6 +8,8 @@
 | Ultimate (E / left grip) | Road Roller | `Skill.DOH.RoadRoller` | Hold to aim, release. Stops time, then a road roller hits one enemy. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
+## Support skill
+Ruthless Bloodsuck (G / chest + grip): Drain a defeated enemy beside you to heal, then move faster. +40 health, 1.2x speed for 20 s, 20 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|
