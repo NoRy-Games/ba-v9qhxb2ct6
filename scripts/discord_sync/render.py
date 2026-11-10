@@ -54,6 +54,79 @@ def _text(value: str) -> str:
     return value.strip()
 
 
+def _table_cells(line: str) -> list[str] | None:
+    """Read optional outer delimiters and escaped literal pipes in a table row."""
+    line = line.strip()
+    cells, cell, separators, trailing = [], [], 0, False
+    for char in line:
+        if char == "|":
+            backslashes = 0
+            for previous in reversed(cell):
+                if previous != "\\":
+                    break
+                backslashes += 1
+            if backslashes % 2:
+                cell.pop()  # Remove only the escape for this literal pipe.
+                cell.append(char)
+                trailing = False
+                continue
+            cells.append("".join(cell).strip())
+            cell, trailing = [], True
+            separators += 1
+        else:
+            cell.append(char)
+            trailing = False
+    if not separators:
+        return None
+    cells.append("".join(cell).strip())
+    if line.startswith("|"):
+        cells.pop(0)
+    if trailing:
+        cells.pop()
+    return cells
+
+
+def _changelog_text(text: str) -> str:
+    """Replace actual Markdown tables with labeled bullets Discord can render."""
+    lines, rendered, index, fence = text.splitlines(), [], 0, None
+    label_headers = {"", "character", "character / skill", "hero", "skill", "rule", "change", "item", "what the bot did"}
+    while index < len(lines):
+        line = lines[index]
+        marker = re.match(r"^ {0,3}(`{3,}|~{3,})", line)
+        if marker:
+            found = marker.group(1)
+            if fence is None:
+                fence = found
+            elif found[0] == fence[0] and len(found) >= len(fence) and not line[marker.end():].strip():
+                fence = None
+            rendered.append(line)
+            index += 1
+            continue
+        headers = _table_cells(line) if fence is None else None
+        delimiter = _table_cells(lines[index + 1]) if headers and index + 1 < len(lines) else None
+        if not delimiter or len(delimiter) != len(headers) or not all(re.fullmatch(r":?-{3,}:?", cell) for cell in delimiter):
+            rendered.append(line)
+            index += 1
+            continue
+        index += 2
+        while index < len(lines):
+            if re.match(r"^ {0,3}(?:`{3,}|~{3,})", lines[index]):
+                break
+            cells = _table_cells(lines[index])
+            if cells is None:
+                break
+            count = max(len(headers), len(cells))
+            cells += [""] * (count - len(cells))
+            names = headers + [f"Column {n + 1}" for n in range(len(headers), count)]
+            row_label = len(names) > 1 and names[0].casefold() in label_headers
+            start = 1 if row_label else 0
+            values = [f"**{names[n] or f'Column {n + 1}'}:** {cells[n] or '—'}" for n in range(start, count)]
+            label = f"**{cells[0] or names[0] or 'Change'}** — " if row_label else ""
+            rendered.append("- " + label + "; ".join(values))
+            index += 1
+    return "\n".join(rendered).strip()
+
+
 def _public_description(value: str) -> str:
     """Keep source mechanics qualitative, without changing gameplay counts.
 
@@ -365,7 +438,7 @@ def render(repo_root: Path, config: dict, bindings: dict[str, str]) -> list[dict
     for path in paths:
         if not re.fullmatch(r"v\d+", path.stem):
             raise ValueError("Changelog filenames must use vN.md")
-        prose = _text(_english(path.read_text(encoding="utf-8"), "changelog"))
+        prose = _changelog_text(_text(_english(path.read_text(encoding="utf-8"), "changelog")))
         if not prose:
             raise ValueError("Empty changelog")
         key = "changelog:" + path.stem

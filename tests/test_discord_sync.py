@@ -226,6 +226,69 @@ class RendererTests(RepositoryCase):
         self.assertTrue(all(len(part['payload'].get('content', '').encode('utf-16-le')) // 2 <= 2000 for part in parts))
         self.assertEqual([row['key'] for row in rows], [row['key'] for row in self.rendered({'character:JTR': '999'})])
 
+    def test_changelog_tables_show_labeled_values_instead_of_raw_markdown(self):
+        sources = {version: (self.repo / f'changelog/{version}.md').read_bytes()
+                   for version in ('v33', 'v34', 'v35')}
+        rows = {row['key']: row for row in self.rendered()}
+        text = {version: rows['changelog:' + version]['payload']['content'] for version in sources}
+        for version, content in text.items():
+            self.assertNotIn('|', content)
+            self.assertNotRegex(content, r'(?m)^\s*:?-{3,}:?(?:\s*\|\s*:?-{3,}:?)+\s*$')
+            self.assertEqual((self.repo / f'changelog/{version}.md').read_bytes(), sources[version])
+        self.assertIn('- **Stopped time with the enemy ~10 m away** — **Now:** Only with the enemy close:', text['v33'])
+        self.assertIn('**Before:** 40; **Now:** **32** (−20%)', text['v33'])
+        self.assertIn('**Jotaro / Star Platinum — Ora Rush** — **Original:** 40; **v33:** 32; **Now:** **34** (−15%)', text['v34'])
+        self.assertIn('**Road Roller**', text['v34'].replace('DIO (High) / The World — ', ''))
+        self.assertIn('**Original:** 120; **v33:** 102; **Now:** 102 (unchanged)', text['v34'])
+        self.assertIn('- **Erased time** — **Before:** 3.5 s; **Now:** **6.5 s**', text['v35'])
+        self.assertIn('everyone within 50 m moves at half speed', text['v35'])
+
+    def test_changelog_table_alignment_escaped_pipes_and_literal_code(self):
+        current = self.read_json('balance.json')
+        current.update(version='v40', changelog='changelog/v40.md')
+        self.write_json('balance.json', current)
+        command = "Run `printf 'A|B' | cat` to inspect the result."
+        fenced = '\n'.join(('````sh', '| Command | Result |', '|---|---|', '| A | B |',
+                            '```', '| Still code | Before | Now |', '|---|---|---|',
+                            '| C | 1 | 2 |', '````'))
+        tildes = '\n'.join(('~~~text', '| A | B |', '|---|---|', '| C | D |', '~~~'))
+        notes = '\n'.join(('# v40', '## Commands', command, '', fenced, '', tildes, '',
+                           '## Balance', 'Rule | Before | Now', ':--- | :---: | ---:',
+                           r'Choose A \| B | 5 \| 6 | **8**',
+                           r'Path \\ | 1 | 2', '',
+                           'Before | Now', '--- | ---', '4 | 7', ''))
+        (self.repo / 'changelog/v40.md').write_text(notes)
+        row = next(row for row in self.rendered() if row['key'] == 'changelog:v40')
+        content = row['payload']['content']
+        self.assertIn(command, content)
+        self.assertIn(fenced, content)
+        self.assertIn(tildes, content)
+        self.assertIn('- **Choose A | B** — **Before:** 5 | 6; **Now:** **8**', content)
+        self.assertIn(r'- **Path \\** — **Before:** 1; **Now:** 2', content)
+        self.assertIn('- **Before:** 4; **Now:** 7', content)
+        self.assertNotIn(':--- | :---: | ---:', content)
+
+    def test_long_converted_changelog_table_keeps_values_and_stable_parts(self):
+        original_keys = {row['key'] for row in self.rendered()}
+        current = self.read_json('balance.json')
+        current.update(version='v40', changelog='changelog/v40.md')
+        self.write_json('balance.json', current)
+        table = ['# v40', '## Balance', '| Skill | Original | Now |', '|:---|---:|:---:|']
+        table += [f'| Hero {n} | {n} | **{n + 1}** |' for n in range(100)]
+        (self.repo / 'changelog/v40.md').write_text('\n'.join(table) + '\n')
+        rows = self.rendered()
+        parts = [row for row in rows if row['key'].startswith('changelog:v40')]
+        self.assertGreater(len(parts), 1)
+        self.assertEqual([row['key'] for row in parts],
+                         ['changelog:v40'] + [f'changelog:v40:{n}' for n in range(2, len(parts) + 1)])
+        self.assertTrue(original_keys.issubset({row['key'] for row in rows}))
+        text = '\n'.join(row['payload']['content'] for row in parts)
+        self.assertNotIn('|', text)
+        for n in range(100):
+            self.assertIn(f'- **Hero {n}** — **Original:** {n}; **Now:** **{n + 1}**', text)
+        self.assertTrue(all(len(row['payload']['content'].encode('utf-16-le')) // 2 <= 1900 for row in parts))
+        self.assertEqual([row['key'] for row in rows], [row['key'] for row in self.rendered()])
+
     def test_missing_original_field_is_a_dash_instead_of_zero(self):
         original = self.read_json('wiki/original-values.json')
         next(skill for skill in original['skills'] if skill['tag'] == 'Skill.JTR.OraRush').pop('areaDamage')
