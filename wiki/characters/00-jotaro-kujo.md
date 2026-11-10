@@ -13,4 +13,6 @@ Current values: search the tag in [`balance.json`](../../balance.json).
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ora Rush | 40 | 0 | 0 | 1 | 1 | 0.5 | 120 | 6 | 0.8 | — |
 | Blocking Rush | 0 | 0 | 0 | 1 | 1 | 0.8 | 0 | 6 | 0.8 | — |
-| The World | 0 | 0 | 0 | 4 | 4 | 1 | 0 | 6 | 0.8 | — |
+| The World | 0 | 0 | 0 | 1.5 | 1.5 | 1 | 0 | 6 | 0.8 | — |
+
+The World: 1.5 s is the starting time stop; the original game can extend it during a match.
