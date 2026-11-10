@@ -1,0 +1,98 @@
+name: Sync Discord documentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - balance.json
+      - wiki/**
+      - changelog/**
+      - .discord/sync.json
+      - scripts/discord_sync/**
+      - .github/workflows/discord-sync.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nory-discord-documentation
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.repository == 'NoRy-Games/ba-v9qhxb2ct6' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      runner_labels: ${{ steps.runner.outputs.labels }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Test and validate all Discord content
+        run: |
+          python -m unittest discover -s tests -v
+          python -m scripts.discord_sync.sync --check
+      - name: Read configured homelab runner labels
+        id: runner
+        env:
+          CONFIGURED_LABELS: ${{ vars.DISCORD_RUNNER_LABELS }}
+        run: |
+          python - <<'PY'
+          import json, os, re
+          raw = os.environ.get('CONFIGURED_LABELS', '')
+          if not raw:
+              raise SystemExit('Set DISCORD_RUNNER_LABELS to the JSON labels of the registered homelab runner.')
+          try:
+              labels = json.loads(raw)
+          except ValueError:
+              raise SystemExit('DISCORD_RUNNER_LABELS must be a JSON array of runner labels.')
+          if not isinstance(labels, list) or not labels:
+              raise SystemExit('DISCORD_RUNNER_LABELS must be a nonempty JSON array of runner labels.')
+          if not all(isinstance(v, str) and re.fullmatch(r'[A-Za-z0-9_. -]{1,100}', v) for v in labels):
+              raise SystemExit('Invalid runner label.')
+          if not {'self-hosted', 'linux', 'nory-discord'}.issubset({v.lower() for v in labels}):
+              raise SystemExit('Runner labels must include self-hosted, linux and the dedicated nory-discord label.')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('labels=' + json.dumps(labels, separators=(',', ':')) + '\n')
+          PY
+
+  sync:
+    needs: validate
+    if: github.repository == 'NoRy-Games/ba-v9qhxb2ct6' && github.ref == 'refs/heads/main'
+    runs-on: ${{ fromJSON(needs.validate.outputs.runner_labels) }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Recheck the checked-out default branch
+        run: |
+          python -m unittest discover -s tests -v
+          python -m scripts.discord_sync.sync --check
+      - name: Prepare persistent message bindings and portrait revisions
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          directory = Path.home() / '.local/state/nory-discord/ba-v9qhxb2ct6'
+          directory.mkdir(mode=0o700, parents=True, exist_ok=True)
+          directory.chmod(0o700)
+          with open(os.environ['GITHUB_ENV'], 'a') as output:
+              output.write('DISCORD_SYNC_STATE_PATH=' + str(directory / 'state.json') + '\n')
+          PY
+          python -m scripts.discord_sync.assets --output "$RUNNER_TEMP/nory-discord-config.json"
+      - name: Update and verify Discord messages
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: python -m scripts.discord_sync.sync --apply --config "$RUNNER_TEMP/nory-discord-config.json"

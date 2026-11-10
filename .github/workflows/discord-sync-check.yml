@@ -1,0 +1,33 @@
+name: Check Discord sync
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - balance.json
+      - wiki/**
+      - changelog/**
+      - .discord/**
+      - scripts/discord_sync/**
+      - tests/**
+      - .github/workflows/discord-sync*.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Test without Discord credentials
+        run: |
+          python -m unittest discover -s tests -v
+          python -m scripts.discord_sync.sync --check
