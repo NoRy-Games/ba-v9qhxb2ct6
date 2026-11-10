@@ -5,7 +5,7 @@
 |---|---|---|---|
 | Attack (LMB / right trigger) | Zip Rush | `Skill.BCT.ZipRush` | A rapid punch rush with long reach. |
 | Skill (Q / left trigger) | Zipper | `Skill.BCT.Zipper` | Hold to aim at a wall, floor or ceiling, release, then walk through. |
-| Ultimate (E / left grip) | Sticky Dive | `Skill.BCT.StickyDive` | Dive under the floor: unseen, untouchable and faster. No attacks while under. |
+| Ultimate (E / left grip) | Sticky Dive | `Skill.BCT.StickyDive` | Hide in a zipper: unseen, untouchable and faster. No attacks meanwhile. |
 
 Current values: search the tag in [`balance.json`](../../balance.json).
 ## Original values (before our changes)
