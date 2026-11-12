@@ -9,7 +9,7 @@
 
 Current values: search the tag in [`balance.json`](../../balance.json).
 ## Support skill
-Crazy Heal (G / chest + grip): Heal yourself after a short wait. A hit stops it. +40 health, 3 s to heal, 45 s wait.
+Crazy Heal (G / chest + grip): Heal the nearest teammate in front of you (team modes) or yourself after a short wait. A hit stops it. +40 health, 3 s to heal, 45 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

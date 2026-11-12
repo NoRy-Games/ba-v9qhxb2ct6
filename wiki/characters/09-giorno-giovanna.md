@@ -9,7 +9,7 @@
 
 Current values: search the tag in [`balance.json`](../../balance.json).
 ## Support skill
-Parts Maker (G / chest + grip): Heal yourself after a short wait. A hit stops it. +20 health, 1.5 s to heal, 30 s wait.
+Parts Maker (G / chest + grip): Heal the nearest teammate in front of you (team modes) or yourself after a short wait. A hit stops it. +20 health, 1.5 s to heal, 30 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|

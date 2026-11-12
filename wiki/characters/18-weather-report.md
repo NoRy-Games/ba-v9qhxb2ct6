@@ -9,7 +9,7 @@
 
 Current values: search the tag in [`balance.json`](../../balance.json).
 ## Support skill
-Cloud Barrier (G / chest + grip): A cloud absorbs the next damage you take. 20 damage shield, 15 s, 30 s wait.
+Cloud Barrier (G / chest + grip): A cloud absorbs the next damage taken by the nearest teammate in front of you (team modes) or by you. 20 damage shield, 15 s, 30 s wait.
 ## Original values (before our changes)
 | Skill | Damage | Area | Per tick | Duration (s) | Effect (s) | Wait (s) | Energy | Range (m) | Radius (m) | Hits |
 |---|---|---|---|---|---|---|---|---|---|---|
