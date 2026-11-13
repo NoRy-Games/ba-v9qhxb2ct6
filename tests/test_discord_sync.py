@@ -520,7 +520,7 @@ class PublisherTests(RepositoryCase):
 
         def with_new_entry(repo, config, bindings):
             rows = render(repo, config, bindings)
-            rows.append({'key': 'changelog:v40', 'channel': 'changelog', 'payload': {'content': '# v40\n- A new documented release.'}})
+            rows.append({'key': 'changelog:v9999', 'channel': 'changelog', 'payload': {'content': '# v9999\n- A new documented release.'}})
             return rows
 
         client.crash_after_create = True
@@ -528,12 +528,12 @@ class PublisherTests(RepositoryCase):
             self.engine(client, with_new_entry).run(apply=True)
         self.assertEqual(client.created, 1)
         pending_state = sync.load_state(self.state_path, self.config)
-        self.assertIn('changelog:v40', pending_state['pending'])
+        self.assertIn('changelog:v9999', pending_state['pending'])
         self.engine(client, with_new_entry).run(apply=True)
         self.assertEqual(client.created, 1)
         final_state = sync.load_state(self.state_path, self.config)
-        self.assertIn('changelog:v40', final_state['bindings'])
-        self.assertNotIn('changelog:v40', final_state['pending'])
+        self.assertIn('changelog:v9999', final_state['bindings'])
+        self.assertNotIn('changelog:v9999', final_state['pending'])
 
 
 class TransportTests(unittest.TestCase):
